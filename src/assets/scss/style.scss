@@ -1,0 +1,51 @@
+@import url("https://use.typekit.net/ksx4kfv.css");
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+@import '../../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
+//@import '../../../node_modules/jquery-ui-dist/jquery-ui.css';
+//@import '../../../node_modules/jquery-ui-dist/jquery-ui.theme.css';
+//@import "../../../node_modules/jquery-bar-rating/dist/themes/fontawesome-stars";
+
+// family
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&display=swap');
+
+@import 'variables';
+@import 'mixins';
+// @import 'classes';
+@import 'extends';
+// @import 'modules';
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// login
+.borderr {
+    border: 1px solid black;
+}
+
+
+
