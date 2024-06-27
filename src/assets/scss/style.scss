@@ -12,9 +12,9 @@
 //@import "../../../node_modules/jquery-bar-rating/dist/themes/fontawesome-stars";
 
 // family
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&display=swap');
 
 @import 'variables';
 @import 'mixins';
@@ -27,6 +27,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    user-select: none;
 }
 
 h1,
@@ -42,10 +43,781 @@ p {
 }
 
 
-// login
 .borderr {
-    border: 1px solid black;
+    border: 1px solid rgb(236, 10, 10);
+}
+
+// product page
+
+header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: $color_1 ;
+    z-index: 10;
+
+    .navbar {
+        padding-inline: 68px 59px;
+        padding-block: 21px !important;
+    }
+
+    .navbar-brand {
+        padding: 0 !important;
+    }
+
+    .navbar-nav {
+        @extend .reset-ul;
+        gap: 36px;
+
+        .nav-link {
+            transition: all 100ms ease;
+            cursor: pointer !important;
+            padding: 0 !important;
+            @include textProperties($colorText: $color_2,
+                $family: $family_1 , $weight: 500, $size: $size_2 , $lineHeight: 24px);
+
+            &:hover {
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+
+    .get-start {
+        text-decoration: none;
+        border: none;
+        border-radius: 55px;
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 13px 20px;
+        @include textProperties($colorText: $color_2,
+            $family: $family_2 , $weight: 500, $size: $size_2 , $lineHeight: 24px);
+        transition: all 1000ms ease;
+
+        &:hover {
+            transform: scaleX(1.1);
+        }
+    }
+
+    .activenav {
+        border-bottom: 1px solid #fff !important;
+    }
+    .navbar-toggler-icon{
+        height: fit-content;
+        font-size: 30px !important;
+    }
+}
+
+#sec1 {
+    background-color: $color_1;
+    padding-top: 143px;
+
+    .secBox {
+        h1 {
+
+            max-width: 856px;
+            margin: auto;
+            margin-bottom: 22px;
+            letter-spacing: -1px;
+            @include textProperties($colorText: $color_2,
+                $family: $family_1 , $weight: 700, $size: $size_0 , $lineHeight: 84px)
+        }
+
+        p {
+            max-width: 770px;
+            margin: auto;
+            margin-bottom: 48px;
+            @include textProperties($colorText: $color_3,
+                $family: $family_2 , $weight: 400, $size: $size_1 , $lineHeight: 32px)
+        }
+
+        ul {
+            margin-bottom: 86px;
+            gap: 33px;
+            @extend .reset-ul;
+
+            .btn-left {
+
+                text-decoration: none;
+                padding: 10px 23.5px;
+                background-color: $color_4;
+                border: none;
+                border-radius: 3px;
+                @include textProperties($colorText: $color_3,
+                    $family: $family_2 , $weight: 500, $size: $size_2 , $lineHeight: 30px);
+                transition: all 500ms ease;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+
+            .btn-right {
+                text-decoration: none;
+                border: none;
+                background-color: transparent;
+                @include textProperties($colorText: $color_3,
+                    $family: $family_2 , $weight: 500, $size: $size_2 , $lineHeight: 30px);
+
+                img {
+                    margin-right: 16px;
+                    transition: all 1s ease;
+
+
+                }
+
+
+
+            }
+        }
+
+        figure {
+            margin: 0;
+
+            img {
+                max-width: 100%;
+                margin: auto;
+            }
+        }
+    }
+
+}
+
+#sec2 {
+    background-color: $color_2;
+
+    .cards {
+        column-gap: 120px;
+        padding-block: 94px;
+
+        .card {
+            cursor: pointer;
+            border: none;
+
+            img {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 40px;
+                transition: all 1s ease;
+
+            }
+
+            h2 {
+                margin-bottom: 15px;
+                @include textProperties($colorText: $color_1,
+                    $family: $family_2 , $weight: 700, $size: $size_3 , $lineHeight: 34px)
+            }
+
+            p {
+                @include textProperties($colorText: $color_1,
+                    $family: $family_2 , $weight: 400, $size: $size_2 , $lineHeight: 28px)
+            }
+
+            &:hover img {
+                transform: translateX(50px) scale(1.1) rotate(360deg);
+            }
+        }
+    }
+}
+
+#sec3 {
+    padding-block: 115px 134px;
+    background-color: $color_3;
+
+    h4 {
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        @include textProperties($colorText: $color_4,
+            $family: $family_2 , $weight: 700, $size: $size_4 , $lineHeight: 18px)
+    }
+
+    h2 {
+        max-width: 636px;
+        margin: auto;
+        margin-bottom: 87px;
+        @include textProperties($colorText: #000,
+            $family: $family_1 , $weight: 700, $size: $size_5 , $lineHeight: 60px)
+    }
+
+    figure {
+        margin: 0;
+        
+
+
+    }
+
+    .cardList {
+        gap: 23px;
+        @extend .reset-ul;
+
+
+
+        .card {
+            padding: 25px 22px;
+
+            background-color: transparent;
+
+
+            border: none;
+            border-radius: 10px;
+            gap: 15px;
+            cursor: pointer;
+
+
+            &:hover {
+                background-color: #fff;
+                box-shadow: 0 4px 4px 0px rgba(35, 40, 105, 0.08);
+            }
+
+
+            .icon {
+                min-width: 50px;
+                min-height: 50px;
+                border-radius: 50%;
+                border: none;
+                @extend .flex-row;
+
+                img {
+                    opacity: 100%;
+                }
+
+
+
+            }
+
+            .svg1 {
+                background-color: rgba(242, 57, 54, 0.2);
+                transition: all 500ms ease;
+            }
+
+            .svg2 {
+                background-color: rgba(69, 198, 70, 0.2);
+                transition: all 500ms ease;
+
+            }
+
+            .svg3 {
+                background-color: rgba(0, 142, 255, 0.2);
+                transition: all 500ms ease;
+
+            }
+
+            &:hover .svg1 {
+                background-color: rgba(242, 57, 54, 0.4);
+            }
+
+            &:hover .svg2 {
+                background-color: rgba(69, 198, 70, 0.4);
+            }
+
+            &:hover .svg3 {
+                background-color: rgba(0, 142, 255, 0.4);
+            }
+
+
+
+            h3 {
+                margin-bottom: 15px;
+                @include textProperties($colorText: $color_1,
+                    $family: $family_2 , $weight: 700, $size: 21px, $lineHeight: 32px)
+            }
+
+            p {
+                @include textProperties($colorText: $color_1,
+                    $family: $family_2 , $weight: 400, $size: $size_2 , $lineHeight: 26px)
+            }
+        }
+
+        .activeSec3 {
+            background-color: #fff;
+            box-shadow: 0 4px 4px 0px rgba(35, 40, 105, 0.08);
+        }
+
+    }
+
+
+}
+
+#sec4 {
+    padding-block: 125px;
+    background-color: #fff;
+
+    h2 {
+        max-width: 395px;
+        margin-right: auto;
+        margin-bottom: 27px;
+        @include textProperties($colorText: #18181B,
+            $family: $family_1 , $weight: 700, $size: $size_6 , $lineHeight: 48px)
+    }
+
+    p {
+        max-width: 417px;
+        margin-right: auto;
+        @include textProperties($colorText: $color_1,
+            $family: $family_2 , $weight: 400, $size: $size_2 , $lineHeight: 26px)
+    }
+
+    img {
+        cursor: pointer;
+        transition: all 1000ms ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+}
+
+#sec5 {
+    padding-block: 112px;
+    background-color: $color_5;
+
+    h2 {
+        margin-right: auto;
+        margin-bottom: 30px;
+        max-width: 526px;
+
+        @include textProperties($colorText: $color_2,
+            $family: $family_1 , $weight: 700, $size: $size_6 , $lineHeight: 48px)
+    }
+
+    p {
+        max-width: 473px;
+        margin-right: auto;
+        margin-bottom: 60px;
+        @include textProperties($colorText: #A1A1AA,
+            $family: $family_2 , $weight: 400, $size: $size_2 , $lineHeight: 26px)
+    }
+
+    ul {
+        @extend .reset-ul;
+        gap: 30px;
+
+        h3 {
+            @include textProperties($colorText: $color_2,
+                $family: $family_1 , $weight: 700, $size: $size_6 , $lineHeight: 48px);
+
+            span {
+                display: inline-block;
+                max-width: 65px;
+                margin-left: 20px;
+                @include textProperties($colorText: $color_2,
+                    $family: $family_2 , $weight: 400, $size: 14px, $lineHeight: 22px)
+            }
+        }
+    }
+
+    figure {
+        padding: 0;
+
+        img {
+            cursor: pointer;
+            transition: all 1000ms ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+#sec6 {
+    background-color: #fff;
+    padding-block: 100px 38px;
+
+    h1 {
+        margin-bottom: 20px;
+        @include textProperties($colorText: $color_1,
+            $family: $family_1 , $weight: 700, $size: $size_5 , $lineHeight: 60px)
+    }
+
+    p {
+        max-width: 497px;
+        margin: auto;
+        margin-bottom: 60px;
+        @include textProperties($colorText: $color_1,
+            $family: $family_2 , $weight: 400, $size: 18px, $lineHeight: 30px)
+    }
+
+    .cards {
+        column-gap: 20px;
+
+        .card {
+            border-radius: 10px;
+            padding: 30px 27px;
+            border: none;
+            background-color: #F4F4F5;
+            cursor: pointer;
+            transition: all 500ms ease;
+
+            h5 {
+                transition: all 1s ease;
+                margin-bottom: 27px;
+                letter-spacing: 1.63px;
+                @include textProperties($colorText: $color_5,
+                    $family: $family_2 , $weight: 700, $size: $size_4 , $lineHeight: 15px)
+            }
+
+            h2 {
+                transition: all 1s ease;
+                margin-bottom: 50px;
+                @include textProperties($colorText: $color_5,
+                    $family: $family_1 , $weight: 700, $size: 48px, $lineHeight: 80px);
+
+                span {
+                    transition: all 1s ease;
+                    @include textProperties($colorText: $color_5,
+                        $family: $family_1 , $weight: 500, $size: 24px, $lineHeight: 80px)
+                }
+            }
+
+            ul {
+                @extend .reset-ul;
+                margin-bottom: 60px;
+
+                h3 {
+                    transition: all 1s ease;
+                    @include textProperties($colorText: $color_5,
+                        $family: $family_2 , $weight: 400, $size: $size_2 , $lineHeight: 35px)
+                }
+            }
+
+            a {
+                transition: all 1s ease;
+                background-color: #fff;
+                text-decoration: none;
+                border: none;
+                border-radius: 5px;
+                padding-block: 16px;
+                @include textProperties($colorText: $color_1,
+                    $family: $family_3 , $weight: 700, $size: $size_2 , $lineHeight: 28px)
+            }
+
+            &:hover {
+                background-color: $color_5;
+            }
+
+            &:hover h5,
+            &:hover h2,
+            &:hover h3,
+            &:hover a,
+            &:hover span {
+                color: #fff;
+            }
+
+            &:hover a {
+                background-color: #2563EB;
+
+            }
+
+        }
+
+
+
+        .activeSec6 {
+            background-color: $color_5;
+
+            h5,
+            h2,
+            h3,
+            a,
+            span,
+            ul h3,
+            h2 span {
+                color: #fff;
+            }
+
+            a {
+                background-color: #2563EB;
+            }
+
+        }
+    }
+
+}
+
+#sec7 {
+    padding-block: 65px;
+    margin-bottom: calc(208px + 33px);
+
+    article {
+        gap: 49px;
+
+        .imgcircle {
+            min-width: 154px;
+            min-height: 154px;
+            border: none;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        p {
+            margin-bottom: 60px;
+            max-width: 627px;
+            margin-right: auto;
+            @include textProperties($colorText: $color_1,
+                $family: $family_2 , $weight: 400, $size: $size_3 , $lineHeight: 37px)
+        }
+
+        h3 {
+            @include textProperties($colorText: $color_1,
+                $family: $family_2 , $weight: 700, $size: $size_1 , $lineHeight: 30px)
+        }
+    }
+}
+
+footer {
+    min-height: 360px;
+    background-color: $color_5;
+
+    .top-footer {
+        padding-block: 73px;
+        background-color: $color_4;
+        border: none;
+        border-radius: 10px;
+        margin-top: -208px;
+        margin-bottom: 62px;
+
+        h2 {
+            max-width: 607px;
+            margin: auto;
+            margin-bottom: 20px;
+            @include textProperties($colorText: $color_2,
+                $family: $family_1 , $weight: 700, $size: $size_5 , $lineHeight: 60px)
+        }
+
+        p {
+            margin-bottom: 40px;
+            @include textProperties($colorText: $color_2,
+                $family: $family_2 , $weight: 400, $size: 18px, $lineHeight: 30px)
+        }
+
+        ul {
+            @extend .reset-ul;
+            gap: 20px;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                border: none;
+                border-radius: 5px;
+                padding-block: 16px;
+                width: 206px;
+
+
+
+            }
+
+            .btn-left {
+                background-color: #fff;
+                @include textProperties($colorText: #111827,
+                    $family: $family_3 , $weight: 700, $size: $size_2 , $lineHeight: 28px);
+                transition: all 500ms ease;
+
+                &:hover {
+                    background-color: #ffffffd2;
+                }
+            }
+
+            .btn-right {
+                background-color: $color_5;
+                @include textProperties($colorText: #fff,
+                    $family: $family_3 , $weight: 700, $size: $size_2 , $lineHeight: 28px);
+                transition: all 500ms ease;
+
+                i {
+                    margin-left: 15px;
+                }
+
+                &:hover {
+                    background-color: #18181bd0;
+                }
+            }
+
+        }
+    }
+
+    .bottom-footer {
+        p {
+            @include textProperties($colorText: #fff,
+                $family: $family_2 , $weight: 400, $size: $size_2 , $lineHeight: 28px)
+        }
+
+        ul {
+            @extend .reset-ul;
+            gap: 41px;
+
+            a {
+                text-decoration: none;
+                @include textProperties($colorText: #fff,
+                    $family: $family_2 , $weight: 500, $size: $size_2 , $lineHeight: 24px);
+                transition: all 500ms ease;
+
+                &:hover {
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #fff;
+                }
+
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #sec1 {
+        h1 {
+            font-size: 60px !important;
+        }
+    }
+
+    #sec2 {
+        .cards {
+            row-gap: 50px !important;
+        }
+    }
+    #sec3{
+        figure {
+            img{
+                max-width: 100% !important;
+                margin: auto !important;
+            }
+    
+        }
+        .sec3gap{
+            row-gap: 50px !important;
+        }
+    }
+    #sec4{
+        h2 ,p{
+            margin: auto !important; 
+        }
+        img{
+            max-width: 100% !important;
+
+        }
+    }
+    #sec5{
+        .sec5gap{
+            row-gap: 50px !important;
+        }
+        figure {
+            img {
+              max-width: 100% !important;
+              margin: auto !important;
+            }
+        }
+    }
+    footer{
+        h2{
+            font-size: 38px !important;
+        }
+        .footergap{
+            row-gap: 20px !important;
+            ul{
+                margin-bottom: 20px !important;
+            }
+        }
+    }
+
+   
+
+}
+
+@media screen and (max-width: 995px) {
+    #sec2 {
+        .cards {
+            row-gap: 50px !important;
+        }
+    }
+    #sec3{
+        figure {
+            img{
+                max-width: 100% !important;
+                margin: auto !important;
+            }
+    
+        }
+        .sec3gap{
+            row-gap: 50px !important;
+        }
+    }
+    #sec4{
+        h2 ,p{
+            margin: auto !important; 
+        }
+        img{
+            max-width: 100% !important;
+            margin: auto !important;
+
+        }
+    }
+    #sec5{
+        h2 ,p{
+            margin: auto !important; 
+            margin-bottom: 30px !important;
+        }
+        .sec5gap{
+            row-gap: 50px !important;
+        }
+        figure {
+            img {
+              max-width: 100% !important;
+              margin: auto !important;
+            }
+        }
+    }
+    footer{
+        .footergap{
+            row-gap: 20px !important;
+            ul{
+                margin-bottom: 20px !important;
+            }
+        }
+    }
+
+
+   header{
+    .navbar-nav {
+        margin-block: 10px !important;
+        .nav-link {
+           width: fit-content !important;
+           margin: auto !important;
+
+
+        }
+    }
+    .get-start{
+        display: none;
+    }
+   }
 }
 
 
-
+@media screen and (max-width: 1420px){
+   
+    #sec3{
+        figure {
+            img{
+                max-width: 100% !important;
+            }
+        }
+       
+    }
+    #sec4{
+        img{
+            max-width: 100% !important;
+        }
+    }
+    #sec5{
+        figure {
+            img {
+              max-width: 100% !important;
+            }
+        }
+    }
+   
+}

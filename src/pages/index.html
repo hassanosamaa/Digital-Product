@@ -1,6 +1,197 @@
 {% extends "layout.html" %}
 
+
+{% import 'component/cardSec2.html' as card %}
+{% import 'component/cardSec3.html' as card2 %}
+{% import 'component/cardSec6.html' as card3 %}
+
 {% block content %}
-<h1>master</h1>
+
+
+
+<section id="sec1">
+    <div class="container ">
+        <div class="row ">
+            <div class="col-12 text-center ">
+                <div class="secBox  ">
+                    <h1>Easy way to achieve customer satisfaction</h1>
+                    <p>Providing all customer service within one software. Our landing page template works on all
+                        devices and we have completely redesigned the project management experience.</p>
+                    <ul class=" d-flex flex-column flex-md-row justify-content-center align-items-center">
+                        <li><a href="#" class="btn-left">Let's get started</a></li>
+                        <li><a href="#" class="btn-right">
+                                <img class="gsap-sec1-icon" src="../assets/images/sec1/Play button.svg" alt=""> Watch
+                                our video</a></li>
+                    </ul>
+                    <figure>
+                        <img class="d-none d-md-block" src="../assets/images/sec1/Group 1101.jpg" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sec2">
+    <div class="container">
+        <div class="row  cards justify-content-center">
+            {% for item in dataEn.sec2 %}
+            <div class="col-11 col-md-5 col-lg-3">
+                {{card.card(item.svgPath,item.title,item.des)}}
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+<section id="sec3">
+    <div class="container">
+        <div class="row justify-content-center   ">
+            <div class="col-12 text-center">
+                <h4>130+ Handcoded Blocks</h3>
+                    <h2>Mixland helps you
+                        build beautiful website</h2>
+            </div>
+        </div>
+
+        <div class="row sec3gap justify-content-center  justify-content-lg-between">
+            <div class="col-10  col-lg-4 order-4 order-lg-0">
+                <ul id="seccard" class="cardList d-flex flex-column  ">
+                    {% for item in dataEn.sec3 %}
+                    {{card2.card(item.svgPath,item.title,item.des,item.name,item.state)}}
+                    {% endfor %}
+                </ul>
+
+
+
+            </div>
+            <div class="col-11 col-md-12 col-lg-7 order-0 order-lg-4">
+                <figure class="">
+                    <img src="../assets/images/sec3/Img.jpg" alt="mixland">
+                </figure>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="sec4">
+    <div class="container">
+        <div class="row text-center text-lg-start align-items-center">
+            <div class="col-lg-6 ">
+                <img src="../assets/images/sec4/customers.png" alt="customers">
+            </div>
+            <div class="col-lg-6 text-center text-lg-start">
+                <h2>Managing & selling digital products is now easier.</h2>
+                <p>Digital products are where it’s at! There are so many benefits to selling digital products. It’s easy
+                    to get started and they can be extremely profitable with smart entrepreneurs and creatives.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="sec5">
+    <div class="container">
+        <div class="row sec5gap align-items-center">
+            <div class=" col-lg-6 text-center text-lg-start order-6 order-md-0">
+                <div>
+                    <h2>Effectively track real-time and updates from team management</h2>
+                    <p>Designed with a simple, user-friendly interface, nTask is a 7-in-1 project management tool that
+                        is ideal for both small and large teams. You can create multiple workspaces.</p>
+                    <ul class="d-flex flex-column flex-md-row justify-content-center justify-content-lg-start ">
+                        <li>
+                            <h3>12K+ <span>Project Created</span></h3>
+                        </li>
+                        <li>
+                            <h3>1947 <span>Agencies Joined</span></h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 order-0 order-md-6">
+                <figure>
+                    <img src="../assets/images/sec5/members.png" alt="members">
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sec6">
+    <div class="container ">
+        <div class="row text-center ">
+            <div class="col-12">
+                <h1>Pricing & Plans</h1>
+                <p>Both a free trial and a free set of features for anyone who wants to use them. The more orders your
+                    company</p>
+
+            </div>
+        </div>
+
+        <div class="row  justify-content-center text-center cards  align-items-end">
+            {% for item in dataEn.sec6 %}
+            <div class="col-11 col-md-10 col-lg-3 ps-0 pe-0  ">
+                {{card3.card(item.title,item.price,item.btnn,item.benefits,item.state)}}
+
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+</section>
+
+<section id="sec7">
+    <div class="container ">
+        <div class="row justify-content-center text-start">
+            <div class=" col-lg-8 text-center text-md-start ">
+
+                <div class="slick">
+
+                    <article class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+                        <div class="imgcircle">
+                            <img src="../assets/images/sec7/Oval.png" alt="oval">
+                        </div>
+                        <div>
+                            <p>“OMG! I cannot believe that I have got a brand new landing page after getting Omega. It
+                                was
+                                super easy to edit and publish.”</p>
+                            <h3>Jonathan Taylor</h3>
+                        </div>
+                    </article>
+
+                    <article class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+                        <div class="imgcircle">
+                            <img src="../assets/images/sec7/Jacob.jpg" alt="oval">
+                        </div>
+                        <div>
+                            <p>“OMG! I cannot believe that I have got a brand new landing page after getting Omega. It
+                                was
+                                super easy to edit and publish.”</p>
+                            <h3>Jacob Jones</h3>
+                        </div>
+                    </article>
+
+                    <article class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+                        <div class="imgcircle">
+                            <img src="../assets/images/sec7/Smith.jpg" alt="oval">
+                        </div>
+                        <div>
+                            <p>“OMG! I cannot believe that I have got a brand new landing page after getting Omega. It
+                                was
+                                super easy to edit and publish.”</p>
+                            <h3>Angela Smith</h3>
+                        </div>
+                    </article> 
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
 
 {% endblock content %}
