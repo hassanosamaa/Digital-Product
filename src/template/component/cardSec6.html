@@ -1,0 +1,17 @@
+{% macro card (title,price,btnn,benefits,state) %}
+<div class="card sec6card text-center {{state}} ">
+
+    <h5>{{title}}</h5>
+    <h2><span>$</span>{{price}}</h2>
+    <ul>
+        {% for item in benefits %}
+        <li>
+            <h3>{{item}}</h3>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="#"> {{btnn}}</a>
+
+</div>
+{% endmacro %}

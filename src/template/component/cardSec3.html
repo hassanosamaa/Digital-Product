@@ -1,0 +1,13 @@
+
+{% macro card (svgPath,title,des,name,state) %}
+<div  class="card sec3card d-flex flex-row align-items-start {{state}} ">
+    <div class="icon {{name}}" >
+        <img src={{svgPath}} alt="icon">
+    </div>
+    <div>
+        <h3>{{title}}</h3>
+        <p>{{des}}</p>
+    </div>
+    
+</div>
+{% endmacro %}

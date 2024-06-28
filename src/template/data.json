@@ -3,7 +3,81 @@
 		"title": "هذه البيانات من ملف data-ar.json"
 	},
 	"dataEn": {
-		"title": "This data from data-en.json file"
+		"title": "This data from data-en.json file",
+		"sec2": [
+			{
+				"svgPath": "../../assets/images/sec2/icon1.svg",
+				"title": "Multiple Modern Layouts",
+				"des": "With lots of unique blocks, you can easily build a page without coding. Build your next landing page quickly."
+			},
+			{
+				"svgPath": "../../assets/images/sec2/icon3.svg",
+				"title": "Built with TailwindCSS",
+				"des": "With lots of unique blocks, you can easily build a page without coding. Build your next landing page quickly."
+			},
+			{
+				"svgPath": "../../assets/images/sec2/icon2.svg",
+				"title": "Fully Responsive",
+				"des": "With lots of unique blocks, you can easily build a page without coding. Build your next landing page quickly."
+			}
+		],
+		"sec3": [
+			{
+				"svgPath": "../../assets/images/sec3/icon1.svg",
+				"title": "Simply Copy & Paste",
+				"des": "Many desktop publishing packages and web page editors now use for them.",
+				"name": "svg1",
+				"state": "activeSec3"
+			},
+			{
+				"svgPath": "../../assets/images/sec3/icon2.svg",
+				"title": "Easy to Customize",
+				"des": "Many desktop publishing packages and web page editors now use for them.",
+				"name": "svg2",
+				"state": " "
+			},
+			{
+				"svgPath": "../../assets/images/sec3/icon3.svg",
+				"title": "Made with TailwindCSS",
+				"des": "Many desktop publishing packages and web page editors now use for them.",
+				"name": "svg3",
+				"state": " "
+			}
+		],
+		"sec6": [
+			{
+				"title": "Basic",
+				"price": "29",
+				"btnn": "Start 14 Days Free Trial",
+				"benefits": [
+					"1 Graphic Design Module",
+					"1 Front-end Module"
+				],
+				"state": " "
+			},
+			{
+				"title": "Standard",
+				"price": "69",
+				"btnn": "Start 14 Days Free Trial",
+				"benefits": [
+					"1 Graphic Design Module",
+					"1 Front-end Module",
+					"2 Marketing Module",
+					"30 Minutes Mentor Class"
+				],
+				"state": "activeSec6"
+			},
+			{
+				"title": "Premium",
+				"price": "99",
+				"btnn": "Start 14 Days Free Trial",
+				"benefits": [
+					"All Modules",
+					"1 Hour Mentor Class"
+				],
+				"state": " "
+			}
+		]
 	},
 	"homeDataAr": {
 		"title": "هذه البيانات من ملف home-ar.json"
