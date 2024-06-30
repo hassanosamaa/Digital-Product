@@ -46,7 +46,9 @@ p {
 .borderr {
     border: 1px solid rgb(236, 10, 10);
 }
-
+body{
+    overflow-x: hidden;
+}
 // product page
 
 header {
@@ -57,8 +59,11 @@ header {
     z-index: 10;
 
     .navbar {
-        padding-inline: 68px 59px;
-        padding-block: 21px !important;
+
+        
+// 
+        padding: 21px 68px 21px 59px !important;
+
     }
 
     .navbar-brand {
@@ -108,7 +113,7 @@ header {
 
 #sec1 {
     background-color: $color_1;
-    padding-top: 143px;
+    padding: 143px 0px 0px 0px ;
 
     .secBox {
         h1 {
@@ -125,6 +130,7 @@ header {
             max-width: 770px;
             margin: auto;
             margin-bottom: 48px;
+            opacity: 70% !important;
             @include textProperties($colorText: $color_3,
                 $family: $family_2 , $weight: 400, $size: $size_1 , $lineHeight: 32px)
         }
@@ -185,8 +191,8 @@ header {
     background-color: $color_2;
 
     .cards {
-        column-gap: 120px;
-        padding-block: 94px;
+        column-gap:calc(120px - 24px) ;
+        padding: 94px 0px;
 
         .card {
             cursor: pointer;
@@ -219,7 +225,7 @@ header {
 }
 
 #sec3 {
-    padding-block: 115px 134px;
+    padding: 115px 0px 134px 0px;
     background-color: $color_3;
 
     h4 {
@@ -337,7 +343,8 @@ header {
 }
 
 #sec4 {
-    padding-block: 125px;
+    // padding-block: 125px;
+    padding: 125px 0px 125px 0px;
     background-color: #fff;
 
     h2 {
@@ -367,7 +374,8 @@ header {
 }
 
 #sec5 {
-    padding-block: 112px;
+    // padding-block: 112px;
+    padding: 112px 0px 112px 0px;
     background-color: $color_5;
 
     h2 {
@@ -421,7 +429,7 @@ header {
 
 #sec6 {
     background-color: #fff;
-    padding-block: 100px 38px;
+    padding: 100px 0px 38px 0px;
 
     h1 {
         margin-bottom: 20px;
@@ -433,12 +441,14 @@ header {
         max-width: 497px;
         margin: auto;
         margin-bottom: 60px;
+        opacity: 70% !important;
         @include textProperties($colorText: $color_1,
             $family: $family_2 , $weight: 400, $size: 18px, $lineHeight: 30px)
     }
 
     .cards {
         column-gap: 20px;
+        
 
         .card {
             border-radius: 10px;
@@ -486,7 +496,7 @@ header {
                 text-decoration: none;
                 border: none;
                 border-radius: 5px;
-                padding-block: 16px;
+                padding: 16px 0px ;
                 @include textProperties($colorText: $color_1,
                     $family: $family_3 , $weight: 700, $size: $size_2 , $lineHeight: 28px)
             }
@@ -535,7 +545,8 @@ header {
 }
 
 #sec7 {
-    padding-block: 65px;
+    // padding-block: 65px;
+    padding: 65px 0px ;
     margin-bottom: calc(208px + 33px);
 
     article {
@@ -574,7 +585,8 @@ footer {
     background-color: $color_5;
 
     .top-footer {
-        padding-block: 73px;
+        // padding-block: 73px;
+        padding: 73px 0px;
         background-color: $color_4;
         border: none;
         border-radius: 10px;
@@ -604,7 +616,8 @@ footer {
                 text-decoration: none;
                 border: none;
                 border-radius: 5px;
-                padding-block: 16px;
+                // padding-block: 16px;
+                padding: 16px 0px;
                 width: 206px;
 
 
@@ -657,7 +670,8 @@ footer {
                 transition: all 500ms ease;
 
                 &:hover {
-                    padding-bottom: 5px;
+                    // padding-bottom: 5px;
+                    padding: 0 0 5px 0;
                     border-bottom: 1px solid #fff;
                 }
 
@@ -668,6 +682,8 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+
+    
     #sec1 {
         h1 {
             font-size: 60px !important;
