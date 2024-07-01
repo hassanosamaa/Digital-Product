@@ -25245,12 +25245,6 @@
 	    repeat: -1,
 	    yoyo: true
 	  });
-	  gsapWithCSS.to(".logo", {
-	    x: 10,
-	    duration: 1,
-	    repeat: -1,
-	    yoyo: true
-	  });
 	});
 
 })));

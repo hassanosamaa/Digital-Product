@@ -14,17 +14,35 @@
         <div class="row ">
             <div class="col-12 text-center ">
                 <div class="secBox  ">
-                    <h1>Easy way to achieve customer satisfaction</h1>
-                    <p>Providing all customer service within one software. Our landing page template works on all
-                        devices and we have completely redesigned the project management experience.</p>
-                    <ul class=" d-flex flex-column flex-md-row justify-content-center align-items-center">
-                        <li><a href="#" class="btn-left">Let's get started</a></li>
-                        <li><a href="#" class="btn-right">
-                                <img class="gsap-sec1-icon" src="../assets/images/sec1/Play button.svg" alt=""> Watch
-                                our video</a></li>
-                    </ul>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="text-center">
+                                <h1>Easy way to achieve customer satisfaction</h1>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+
+                        <div class="col-lg-7">
+                            <div class="text-center">
+                                <p>Providing all customer service within one software. Our landing page template
+                                    works on all
+                                    devices and we have completely redesigned the project management experience.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class=" ul d-flex flex-column flex-md-row justify-content-center align-items-center">
+                        <div><a href="#" class="btn-left">Let's get started</a></div>
+                        <div><a href="#" class="btn-right">
+                                <img class="gsap-sec1-icon" src="assets/images/sec1/Play button.svg" alt=""> Watch
+                                our video</a></div>
+                        </div>
                     <figure>
-                        <img class="d-none d-md-block" src="../assets/images/sec1/Group 1101.jpg" alt="">
+                        <img  src="assets/images/sec1/Group 1101.jpg" alt="">
                     </figure>
                 </div>
             </div>
@@ -34,6 +52,7 @@
 
 <section id="sec2">
     <div class="container">
+       <div class="cardRow">
         <div class="row  cards  justify-content-center">
             {% for item in dataEn.sec2 %}
             <div class="col-11 col-md-5 col-lg-3">
@@ -42,13 +61,14 @@
             {% endfor %}
 
         </div>
+       </div>
     </div>
 </section>
 
 <section id="sec3">
     <div class="container">
         <div class="row justify-content-center   ">
-            <div class="col-12 text-center">
+            <div class="col-lg-6 text-center">
                 <h4>130+ Handcoded Blocks</h3>
                     <h2>Mixland helps you
                         build beautiful website</h2>
@@ -57,18 +77,18 @@
 
         <div class="row sec3gap justify-content-center  justify-content-lg-between">
             <div class="col-10  col-lg-4 order-4 order-lg-0">
-                <ul id="seccard" class="cardList d-flex flex-column  ">
+                <div id="seccard" class="cardList d-flex flex-column  ">
                     {% for item in dataEn.sec3 %}
                     {{card2.card(item.svgPath,item.title,item.des,item.name,item.state)}}
                     {% endfor %}
-                </ul>
+                </div>
 
 
 
             </div>
             <div class="col-11 col-md-12 col-lg-7 order-0 order-lg-4">
                 <figure class="">
-                    <img src="../assets/images/sec3/Img.jpg" alt="mixland">
+                    <img src="assets/images/sec3/Img.jpg" alt="mixland">
                 </figure>
             </div>
         </div>
@@ -80,7 +100,7 @@
     <div class="container">
         <div class="row text-center text-lg-start align-items-center">
             <div class="col-lg-6 ">
-                <img src="../assets/images/sec4/customers.png" alt="customers">
+                <img src="assets/images/sec4/customers.png" alt="customers">
             </div>
             <div class="col-lg-6 text-center text-lg-start">
                 <h2>Managing & selling digital products is now easier.</h2>
@@ -100,19 +120,19 @@
                     <h2>Effectively track real-time and updates from team management</h2>
                     <p>Designed with a simple, user-friendly interface, nTask is a 7-in-1 project management tool that
                         is ideal for both small and large teams. You can create multiple workspaces.</p>
-                    <ul class="d-flex flex-column flex-md-row justify-content-center justify-content-lg-start ">
-                        <li>
+                    <div class=" ul d-flex flex-column flex-md-row justify-content-center justify-content-lg-start ">
+                        <div>
                             <h3>12K+ <span>Project Created</span></h3>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <h3>1947 <span>Agencies Joined</span></h3>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 order-0 order-md-6">
                 <figure>
-                    <img src="../assets/images/sec5/members.png" alt="members">
+                    <img src="assets/images/sec5/members.png" alt="members">
                 </figure>
             </div>
         </div>
@@ -152,7 +172,7 @@
 
                     <article class="d-flex flex-column flex-md-row justify-content-center align-items-center">
                         <div class="imgcircle">
-                            <img src="../assets/images/sec7/Oval.png" alt="oval">
+                            <img src="assets/images/sec7/Oval.png" alt="oval">
                         </div>
                         <div>
                             <p>“OMG! I cannot believe that I have got a brand new landing page after getting Omega. It
@@ -164,7 +184,7 @@
 
                     <article class="d-flex flex-column flex-md-row justify-content-center align-items-center">
                         <div class="imgcircle">
-                            <img src="../assets/images/sec7/Jacob.jpg" alt="oval">
+                            <img src="assets/images/sec7/Jacob.jpg" alt="oval">
                         </div>
                         <div>
                             <p>“OMG! I cannot believe that I have got a brand new landing page after getting Omega. It
@@ -176,7 +196,7 @@
 
                     <article class="d-flex flex-column flex-md-row justify-content-center align-items-center">
                         <div class="imgcircle">
-                            <img src="../assets/images/sec7/Smith.jpg" alt="oval">
+                            <img src="assets/images/sec7/Smith.jpg" alt="oval">
                         </div>
                         <div>
                             <p>“OMG! I cannot believe that I have got a brand new landing page after getting Omega. It
@@ -184,7 +204,7 @@
                                 super easy to edit and publish.”</p>
                             <h3>Angela Smith</h3>
                         </div>
-                    </article> 
+                    </article>
 
                 </div>
 
@@ -193,5 +213,23 @@
     </div>
 </section>
 
+
+<section id="sec8">
+    <div class="container">
+        <div class="row ">
+            <div class="col-12 text-center">
+                <div class="top-footer">
+                    <h2>Start learning new things & build your skills today</h2>
+                    <p>Build your next landing page fast & easy</p>
+                    <ul class="d-flex flex-column flex-md-row justify-content-center">
+                        <li><a class="btn-left" href="#">Watch free tutorials</a></li>
+                        <li><a class="btn-right" href="#">Get Started Now<i class="fa-solid fa-angle-right gsap-footer-icon"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+</section>
 
 {% endblock content %}

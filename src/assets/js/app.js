@@ -15,6 +15,5 @@ $(document).ready(() => {
     sec7();
     gsap.to(".gsap-sec1-icon",{  scale: 1.5, duration: 1 ,repeat:-1,yoyo:true})
     gsap.to(".gsap-footer-icon",{  x: 7, duration: 1 ,repeat:-1,yoyo:true})
-    gsap.to(".logo",{  x: 10, duration: 1 ,repeat:-1,yoyo:true})
 
 });
